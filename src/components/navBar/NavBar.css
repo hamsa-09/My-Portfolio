@@ -1,13 +1,15 @@
+/* General Styles */
 nav {
     padding: 20px;
     display: flex;
+    justify-content: space-between;
     position: relative;
 }
 
 .nav-logo {
     display: flex;
+    align-items: center;
     gap: 10px;
-    flex: 1 1 auto;
 }
 
 .nav-logo img {
@@ -16,11 +18,22 @@ nav {
     border-radius: 40px;
 }
 
+.hamburger-icon {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 .navbar {
     display: flex;
     flex-direction: column;
     border-radius: 40px 10px 0px 0px;
     gap: 10px;
+    position: fixed;
+    top: 200px;
+    right: 30px;
 }
 
 .navbar li {
@@ -28,19 +41,17 @@ nav {
 }
 
 .navbar li a {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width:25px;
-    height: 25px;
-    top:150px;
+    width: 20px;
+    height: 20px;
     background-color: rgb(95, 95, 95);
     color: rgb(255, 214, 137);
     font-size: 24px;
     padding: 10px 10px;
     text-decoration: none;
-    border-radius: 50%;
+    border-radius: 25%;
     transition: background-color 1.09s ease, transform 1.09s;
 }
 
@@ -50,23 +61,43 @@ nav {
     background-color: black;
 }
 
-@media(max-width: 768px) {
-    nav{
-        padding: 5px;
+@media (max-width: 468px) {
+    .nav-logo {
+        width: 100%;
     }
-    .navbar {
-        gap: 10px;
+    .nav-logo h1{
+        font-size: 16px;
+    }
+    .hamburger-icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        display: block;
+        color: wheat;
     }
 
-    .nav-logo{
-        display: none;
+    .navbar {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 10px 0;
+        border-radius: 10px 10px 0 0;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     }
-    .navbar li a{
-        left: 270px;
-        background-color: black;
-        font-size: 16px;
-        height: 15px;
-        width:15px;
-        border-radius: 10px;
+
+    .navbar.open {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
     }
 }
