@@ -1,0 +1,19 @@
+.skill {
+    text-align: center;
+    min-height: 100vh;
+    margin:0px 50px;
+    margin-bottom: 20px;
+}
+
+.skill h2 {
+    font-size: 2.3rem;
+    margin-bottom: 40px;
+}
+
+.skill-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin:0px 200px;
+    gap: 40px;
+}

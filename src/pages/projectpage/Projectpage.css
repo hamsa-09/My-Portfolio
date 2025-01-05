@@ -1,0 +1,19 @@
+.project{
+    min-height: 100vh;
+    margin-bottom: 60px;
+    text-align: center;
+    padding: 0px 10px;
+    min-height: 100vh;
+}
+.project h2{
+    font-size: 2.3rem;
+    margin-bottom:40px;
+}
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 200px;
+    gap:40px;
+
+}

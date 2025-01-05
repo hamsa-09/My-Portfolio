@@ -3,12 +3,13 @@ import "./Aboutpage.css"
 const Aboutpage = () => {
   return (
     <div className='about'>
-    <h1>About Me</h1>
-    <p>
-      I am a full-stack developer with a passion for creating dynamic and
-      responsive web applications. I love coding and learning new
-      technologies.
-    </p>
+    <h2>About Me</h2>
+    <div className="personal">
+
+    </div>
+    <div className="education">
+        
+    </div>
     </div>
   )
 }

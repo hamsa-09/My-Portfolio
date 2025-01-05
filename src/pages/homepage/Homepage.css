@@ -1,93 +1,189 @@
 .home {
-    margin: 20px;
+    margin-right: 70px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #232526, #414345);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    gap: 80px;
+    height: 70vh;
+}
+
+.image {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-
+    width: 100%;
+    max-width: 400px;
+    border-radius:100px 100px 400px 100px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #0e0e0e, #292929);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .image img {
     width: 80%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 380px;
+    height: 20rem;
 }
 
-.text h1,
-.text h2,
-.text h4 {
-    margin: 10px 0;
-    padding: 10px;
+.text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.text h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #cfcfcf;
+    margin-bottom: 10px;
 }
 
 .text h1 {
-    font-size: 2.5rem;
-    color: #a7a3a3;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f8f8f8;
 }
 
-.text h2 {
-    font-size: 1.8rem;
-    color: #555;
+
+.text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #d3d3d3;
+    max-width: 600px;
+    margin: 20px 0;
+    text-align: justify;
 }
 
-.text h4 {
-    font-size: 1.2rem;
-    color: #777;
-}
-.text button{
-    background-color:rgb(95, 95, 95);
-    color: rgb(255, 242, 218);
-    border-radius:  10px 40px;
-    width: 150px;
-    height: 40px;
+/* Button */
+.text button {
+    padding: 12px 30px;
+    background: #565555;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
     cursor: pointer;
-    transition: transform 0.9s ease, background-color 0.9s ease, color 0.9s ease;
+    transition: all 0.8s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
 }
-.text button:hover{
-    background: black;
-    color: wheat;
+
+.text button:hover {
+    background: rgb(1, 181, 169);
+    color: rgb(231, 231, 231);
     transform: scale(1.05);
 }
 
-/* Tablet view */
+/* Responsive Tablet View */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .home{
-        width: 85%;
+    .home {
+        margin: 0;
+        flex-direction: column;
+        padding: 40px;
+        gap: 20px;
     }
+
+    .image img {
+        max-width: 300px;
+    }
+
+    .text h1 {
+        font-size: 2.5rem;
+    }
+
+    .text h3 {
+        font-size: 1.2rem;
+    }
+
+    .text p {
+        font-size: 1.1rem;
+        max-width: 500px;
+    }
+
+    .text button {
+        font-size: 0.9rem;
+        padding: 10px 25px;
+    }
+}
+
+/* Responsive Mobile View */
+@media (max-width: 600px) {
+    .home {
+        margin: 0;
+        padding:20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .image{
+        margin-top: 40px;
+        width:70%;
+        height:13rem;
+        border-radius: 20px;
+    }
+    .image img {
+        width: 80%;
+        border-radius: 20%;
+        height: 10rem;
+    }
+
     .text h1 {
         font-size: 2rem;
     }
 
-    .text h2 {
-        font-size: 1.5rem;
-    }
-
-    .text h4 {
+    .text h3 {
         font-size: 1rem;
     }
+
+    .text p {
+        font-size: 0.9rem;
+        max-width: 400px;
+    }
+
+    .text button {
+        font-size: 0.8rem;
+        padding: 10px 20px;
+    }
+
 }
 
-/* Mobile view */
-@media  (max-width: 540px) {
-    .home{
-        flex-direction: column;
+/* Extra Small Mobile View */
+@media (max-width: 400px) {
+    .home {
+        margin: 0;
+        padding: 10px;
+        gap: 15px;
     }
+.image{
+    margin-top: 20px;
+    width: 12rem;
+    height: auto;
+}
     .image img {
         width: 80%;
-        height: auto;
     }
 
     .text h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
-    .text h2 {
-        font-size: 1.2rem;
-    }
-
-    .text h4 {
+    .text h3 {
         font-size: 0.9rem;
+    }
+
+    .text p {
+        font-size: 0.8rem;
+        max-width: 300px;
+    }
+
+    .text button {
+        font-size: 0.7rem;
+        padding: 8px 15px;
     }
 }

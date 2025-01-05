@@ -1,11 +1,11 @@
 :root{
     background-color: black;
     padding: 20px 20px;
+    color: rgb(194, 194, 194);
     font-family: cursive;
-    color: wheat;
 }
 @media(max-width:768px){
     :root{
-        padding: 10px 10px;
+        padding: 10px 20px;
     }
 }
