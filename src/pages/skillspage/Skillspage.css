@@ -1,7 +1,7 @@
+/* Skill Section Container */
 .skill {
     text-align: center;
-    min-height: 100vh;
-    margin:0px 50px;
+    margin: 0px 50px;
     margin-bottom: 20px;
 }
 
@@ -10,10 +10,84 @@
     margin-bottom: 40px;
 }
 
+/* Skill Cards Container */
 .skill-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    margin:0px 200px;
-    gap: 40px;
+    flex-wrap: wrap; /* Allow cards to wrap on larger screens */
+    justify-content: center; /* Center the cards in the container */
+    gap: 40px; /* Add spacing between cards */
+    margin: 0px 200px; /* Add spacing around the container */
+    align-items: center; /* Vertically center the cards */
+}
+
+/* Individual Skill Card Styling */
+.skill-card {
+    background-color: #333;
+    color: white;
+    width: 8.6rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 4px;
+    flex-shrink: 0; /* Prevent shrinking of cards */
+    text-align: center; /* Center-align text inside the card */
+}
+
+.skill-card img {
+    
+    width: 3rem;
+    height: 3rem;
+}
+
+.skill-card-title {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    color: white;
+}
+
+/* Responsive Adjustments - Horizontal Scrolling only for Mobile/Tablet */
+@media (max-width: 768px) {
+    .skill-cards {
+        margin: 0; /* Remove side margins for small screens */
+        gap: 20px; /* Reduce spacing between cards */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        flex-wrap: nowrap; /* Prevent wrapping, make it scrollable horizontally */
+        padding: 10px;
+    }
+
+    .skill-card {
+        width: 6.5rem; /* Adjust card width for smaller screens */
+        padding: 10px;
+    }
+
+    .skill-card img {
+        width: 2.5rem; /* Scale down images */
+        height: 2.5rem;
+    }
+
+    .skill-card-title {
+        font-size: 0.9rem; /* Reduce font size */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .skill-cards {
+        margin: 0px 10px; /* Reduce side margins for medium screens */
+        gap: 30px; /* Adjust spacing between cards */
+    }
+
+    .skill-card {
+        width: 7.5rem; /* Adjust card width */
+    }
+
+    .skill-card img {
+        width: 3rem; /* Maintain image size */
+        height: 3rem;
+    }
+
+    .skill-card-title {
+        font-size: 1rem; /* Keep font size consistent */
+    }
 }

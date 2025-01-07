@@ -53,12 +53,12 @@ nav {
     padding: 10px 10px;
     text-decoration: none;
     border-radius: 25%;
-    transition: background-color 1.09s ease, transform 1.09s;
+    transition: background-color 0.3s ease, transform 1.04s;
 }
 
 .navbar li a:hover {
     color: rgb(255, 255, 255) ;
-    transform: scale(1.09);
+    transform: scale(1.04);
     background-color: rgb(1, 181, 169);
 }
 @media (min-width:768px) and (max-width:1024px){

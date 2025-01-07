@@ -70,14 +70,14 @@
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.3s ease-in-out;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
 }
 
 .text button:hover {
     background: rgb(1, 181, 169);
     color: rgb(231, 231, 231);
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 
 /* Responsive Tablet View */
