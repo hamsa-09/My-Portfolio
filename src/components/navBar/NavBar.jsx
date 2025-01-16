@@ -12,12 +12,11 @@ const NavBar = ({ refs }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setMenuOpen((prevState) => !prevState);
   };
 
   const handleScroll = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
-    setMenuOpen(false); // Close menu on selection (for mobile views)
   };
 
   return (

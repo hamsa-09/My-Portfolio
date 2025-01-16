@@ -61,7 +61,6 @@
     text-align: justify;
 }
 
-/* Button */
 .text button {
     padding: 12px 30px;
     background: #565555;
@@ -79,18 +78,11 @@
     color: rgb(231, 231, 231);
     transform: scale(1.04);
 }
-
-/* Responsive Tablet View */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .home {
         margin: 0;
-        flex-direction: column;
         padding: 40px;
         gap: 20px;
-    }
-
-    .image img {
-        max-width: 300px;
     }
 
     .text h1 {
@@ -111,26 +103,24 @@
         padding: 10px 25px;
     }
 }
-
-/* Responsive Mobile View */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .home {
         margin: 0;
         padding:20px;
         flex-direction: column;
         gap: 30px;
+        height: auto;
     }
 
     .image{
         margin-top: 40px;
-        width:70%;
-        height:13rem;
+        height:auto;
         border-radius: 20px;
     }
     .image img {
         width: 80%;
         border-radius: 20%;
-        height: 10rem;
+        height: auto;
     }
 
     .text h1 {
@@ -153,12 +143,12 @@
 
 }
 
-/* Extra Small Mobile View */
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .home {
         margin: 0;
         padding: 10px;
         gap: 15px;
+        height: auto;
     }
 .image{
     margin-top: 20px;

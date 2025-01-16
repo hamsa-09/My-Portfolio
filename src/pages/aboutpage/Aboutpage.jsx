@@ -5,29 +5,29 @@ import { FaLinkedin, FaGithub, FaCode } from 'react-icons/fa';
 const Aboutpage = () => {
     return (
         <div className="about">
-            <h2>About Me</h2>
+            <h2>ABOUT ME</h2>
             <div className="infos">
                 <div className="personal">
                     <h3>PERSONAL DETAILS</h3>
                     <div className="info-item">
-                        <span className="label">Name:</span>
-                        <span className="value">Hamsavardhini B</span>
+                        <span className="label">Name :</span>
+                        <span className="value"> Hamsavardhini B</span>
                     </div>
                     <div className="info-item">
-                        <span className="label">Date of Birth:</span>
-                        <span className="value">09-04-2003</span>
+                        <span className="label">Date of Birth :</span>
+                        <span className="value"> 09-04-2003</span>
                     </div>
                     <div className="info-item">
-                        <span className="label">Location:</span>
-                        <span className="value">Coimbatore, India</span>
+                        <span className="label">Location :</span>
+                        <span className="value"> Coimbatore, India</span>
                     </div>
                     <div className="info-item">
-                        <span className="label">Phone Number:</span>
-                        <span className="value">9677838659</span>
+                        <span className="label">Phone Number :</span>
+                        <span className="value"> 9677838659</span>
                     </div>
                     <div className="info-item">
-                        <span className="label">Email:</span>
-                        <span className="value">hamsavardhinibaskar@gmail.com</span>
+                        <span className="label">Email :</span>
+                        <span className="value"> hamsavardhinibaskar@gmail.com</span>
                     </div>
                     <div className="icons">
                         <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
@@ -36,7 +36,7 @@ const Aboutpage = () => {
                         <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
                             <FaGithub className="icon github" />
                         </a>
-                        <a href="https://leetcode.com/your-profile" target="_blank" rel="noopener noreferrer">
+                        <a href="https://leetcode.com/u/Hamsa_09/" target="_blank" rel="noopener noreferrer">
                             <FaCode className="icon leetcode" />
                         </a>
                     </div>

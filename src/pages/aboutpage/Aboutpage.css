@@ -1,5 +1,5 @@
 .about {
-    margin-top: 30px;
+    margin-top: 60px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -19,6 +19,7 @@
     max-width: 1200px;
     flex-wrap: wrap;
 }
+
 .info-item {
     padding: 10px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -32,82 +33,177 @@
     text-align: left;
     margin: 10px;
 }
-.education{
-    flex:1;
+
+.education {
+    flex: 1;
     min-width: 300px;
     padding: 40px;
     color: #ffffff;
-    margin:10px;
+    margin: 10px;
 }
-.education dl{
-    margin:0;
-    padding:0;
+
+.education dl {
+    margin: 0;
+    padding: 0;
 }
-.education dt{
+
+.education dt {
     font-weight: bold;
     font-size: 1.1rem;
     margin-top: 20px;
     margin-bottom: 5px;
-    font-weight: bold;
     padding: 5px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.education dd{
+
+.education dd {
     margin-left: 20px;
     font-size: 1rem;
     color: #cfcfcf;
 }
-.personal h3{
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-.education h3{
+
+.personal h3, .education h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-/* Tablet View: 768px - 1024px */
+.icons {
+    padding: 20px 0px;
+}
+
+.icons a {
+    font-size: 1.5rem;
+    padding: 0px 20px;
+    color: wheat;
+}
 @media (min-width: 768px) and (max-width: 1024px) {
+    .about {
+        min-height: auto;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
     .about h2 {
         font-size: 2rem;
+        margin-bottom: 20px;
     }
 
     .infos {
-        margin: 0 50px;
-        gap: 15px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        padding: 15px;
     }
 
     .personal, .education {
-        padding: 15px;
+        min-width: 300px;
+        padding: 30px;
+        margin: 10px auto;
+    }
+
+    .personal h3, .education h3 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+
+    .education dt {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .education dd {
+        font-size: 0.95rem;
+        margin-left: 15px;
+    }
+
+    .icons {
+        padding: 15px 0;
+    }
+
+    .icons a {
+        font-size: 1.3rem;
+        padding: 0 15px;
     }
 }
-.icons{
-    padding:20px 0px;
-}
-.icons a{
-    font-size: 1.5rem;
-    padding:0px 20px;
-    color: wheat;
-}
 
-/* Mobile View: Up to 540px */
-@media (max-width: 540px) {
-    .about {
-        padding: 0 10px;
+@media (max-width: 768px) {
+    .about{
+        min-height: 0vh;
+    }
+    .infos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .personal, .education {
+        min-width: 280px;
+        text-align: center;
+        padding: 20px;
     }
 
     .about h2 {
         font-size: 1.8rem;
     }
 
+    .education dt {
+        font-size: 0.95rem;
+    }
+
+    .education dd {
+        font-size: 0.9rem;
+    }
+
+    .icons a {
+        font-size: 1.1rem;
+        padding: 0px 10px;
+    }
+}
+@media (max-width: 480px) {
+    .about {
+        min-height: 0vh;
+        margin-top: 20px;
+        padding: 5px;
+    }
+
+    .about h2 {
+        font-size: 1.7rem;
+    }
+
     .infos {
-        flex-direction: column;
-        gap: 20px;
-        margin: 0;
+        gap: 10px;
     }
 
     .personal, .education {
-        min-width: 100%;
-        padding: 10px;
+        min-width: 250px;
+        padding: 15px;
+        margin: 5px auto;
+        text-align: left;
+    }
+    .label,.value{
+        font-size: 0.7rem;
+        border-bottom: none;
+    }
+
+    .personal h3, .education h3 {
+        font-size: 1.1rem;
+    }
+
+    .education dt {
+        font-size: 0.82rem;
+    }
+
+    .education dd {
+        font-size: 0.79rem;
+    }
+
+    .icons {
+        padding: 10px 0;
+    }
+
+    .icons a {
+        font-size: 1rem;
+        padding: 0px 5px;
     }
 }

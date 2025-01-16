@@ -61,7 +61,7 @@ nav {
     transform: scale(1.04);
     background-color: rgb(1, 181, 169);
 }
-@media (min-width:768px) and (max-width:1024px){
+@media (max-width:768px) {
     .nav-logo {
         width: 100%;
     }
@@ -99,7 +99,8 @@ nav {
     .navbar.open {
         visibility: visible;
         opacity: 1;
-        transform: translateY(0);
+        z-index:10;
+        transform: translateY(-10);
     }
 }
 
@@ -122,7 +123,7 @@ nav {
 
     .navbar {
         position: fixed;
-        top: auto;
+        top:auto;
         bottom: 0;
         right: 0;
         left: 0;
@@ -140,6 +141,7 @@ nav {
     .navbar.open {
         visibility: visible;
         opacity: 1;
+        z-index:10;
         transform: translateY(0);
     }
 }
