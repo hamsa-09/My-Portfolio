@@ -30,10 +30,10 @@ const Aboutpage = () => {
                         <span className="value"> hamsavardhinibaskar@gmail.com</span>
                     </div>
                     <div className="icons">
-                        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/hamsavardhinibaskar/" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin className="icon linkedin" />
                         </a>
-                        <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/hamsa-09?tab=repositories" target="_blank" rel="noopener noreferrer">
                             <FaGithub className="icon github" />
                         </a>
                         <a href="https://leetcode.com/u/Hamsa_09/" target="_blank" rel="noopener noreferrer">
