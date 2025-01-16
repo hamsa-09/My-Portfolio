@@ -1,14 +1,5 @@
 *{
     margin:0;
     position: 0;
+    font-family: cursive;
 }
-
-/*
-@media (max-width: 768px)
-{
-    .app{
-        width:100%;
-        height: 98vh;
-        border-radius: 5px;
-    }
-} */

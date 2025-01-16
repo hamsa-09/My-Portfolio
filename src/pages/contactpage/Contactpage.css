@@ -96,6 +96,7 @@
       justify-content: space-around;
       padding: 50px 20px;
       height: auto;
+      margin-bottom: 25px;
     }
 
     .contact-left {
@@ -135,6 +136,7 @@
     .contact-page {
       flex-direction: column;
       padding: 20px 10px;
+      margin-bottom: 35px;
     }
 
     .contact-left {
