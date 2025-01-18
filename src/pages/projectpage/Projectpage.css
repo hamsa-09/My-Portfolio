@@ -19,7 +19,7 @@
 @media(max-width:1150px){
     .project-container{
         flex-direction: column;
-        margin:0px 100px;
+        margin:0px 80px;
     }
 }
 @media (max-width: 767px) {
@@ -27,8 +27,3 @@
     margin: 0px 0px;
 }
 }
-@media (max-width: 480px) {
-
-    .project h2 {
-        font-size: 1.7rem;
-    }}

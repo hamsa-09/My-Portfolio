@@ -7,10 +7,10 @@ const ProjectCard = ({project,description,image,stack}) => {
         Aos.init({ duration: 3000 });
     }, []);
   return (
-    <div className="project-card" data-aos="fade-up">
-        <img src={image} alt={project} />
+    <div className="project-card" data-aos="fade-down">
+        <h3>{project}</h3>
         <div className='project-text'>
-            <h3>{project}</h3>
+             <img src={image} alt={project} />
             <p>{description}</p>
         </div>
         <div className='project-stack'>

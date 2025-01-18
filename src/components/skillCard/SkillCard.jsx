@@ -7,7 +7,7 @@ const SkillCard = ({ skill, image }) => {
         Aos.init({ duration: 3000 });
     }, []);
   return (
-    <div className="skill-card" data-aos="fade-up">
+    <div className="skill-card" data-aos="fade-bottom">
       <img src={image} alt={skill} className="skill-card-image" />
       <p className="skill-card-title">{skill}</p>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Projectpage.css"
-import img1 from "../../assets/bg.png"
+import img1 from "../../assets/tp.png"
 import ProjectCard from '../../components/projectCard/ProjectCard'
 const Projectpage = () => {
     const projects=[
@@ -8,7 +8,7 @@ const Projectpage = () => {
             title:"Transport permit",
             description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
             stack:"React , Node.js, MongoDB",
-            image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRHmSlrGArBLNPBb140q5oOQhmgDTXcqVJeg&s",
+            image:img1,
         },
         {
             title:"Transport permit",

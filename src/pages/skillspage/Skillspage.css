@@ -28,7 +28,7 @@
     height: 2rem;
     display: flex;
     align-items: center;
-    gap:10px;
+    gap: 10px;
     padding: 15px;
     border-radius: 4px;
     flex-shrink: 0;
@@ -46,35 +46,30 @@
     font-size: 1rem;
     color: white;
 }
+
 @keyframes scroll {
     0% {
-        transform: translateX(100%);
+        transform: translateX(calc(-10% + 100vw));
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(0%);
     }
 }
-@media (max-width: 768px) {
-    .skill{
-        min-height: 0;
-        margin: 10px 150px;
-    }
-    .skill-cards {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow: hidden;
-        white-space: nowrap;
-        gap: 20px;
-        padding: 10px;
-        margin: 0;
 
+@media (max-width: 600px) {
+    .skill {
+        min-height: 0vh;
+        margin: 0;
+    }
+    .skill-cards{
+        margin: 0px 0px;
+        gap:15px;
+        
     }
 
     .skill-card {
-        min-width: 100px;
-        gap:10px;
+        width:130px;
         padding: 10px;
-        animation: scroll 10s linear infinite;
     }
 
     .skill-card img {
@@ -87,18 +82,18 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-.skill{
-    min-height: 0vh;
-    margin: 0px 0px;
-    padding: 0px 0px;
-}
-}
-@media (max-width: 480px) {
-    .skill{
-        margin: 0px 40px;
+@media (min-width: 768px) and (max-width: 1024px) {
+    .skill {
+        min-height: 0vh;
     }
+    .skill-cards{
+        margin: 10px 40px;
+    }
+}
+
+@media (max-width: 480px) {
     .skill h2 {
         font-size: 1.7rem;
     }
+
 }
