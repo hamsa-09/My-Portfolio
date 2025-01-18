@@ -61,7 +61,7 @@
     bottom: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .project-card {
       flex-basis: 100%;
       flex-direction: column;

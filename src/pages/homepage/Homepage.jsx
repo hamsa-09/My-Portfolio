@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Homepage.css";
 import img from "../../assets/dp.png";
-import cv from "../../assets/cv.pdf"; // The PDF you want to preview
+import cv from "../../assets/cv.pdf";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Homepage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -17,12 +19,17 @@ const Homepage = () => {
     }
   }, [isModalOpen]);
 
+
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+}, []);
+
   return (
     <div className="home">
-      <div className="image">
+      <div className="image" data-aos="fade-up">
         <img src={img} alt="Profile" />
       </div>
-      <div className="text">
+      <div className="text" data-aos="fade-up">
         <h3>Hey there!</h3>
         <h1>I'm HAMSAVARDHINI</h1>
         <p>

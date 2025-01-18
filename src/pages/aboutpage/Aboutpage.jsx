@@ -1,13 +1,18 @@
-import React from 'react';
+import React,{useEffect } from 'react';
 import './Aboutpage.css';
 import { FaLinkedin, FaGithub, FaCode } from 'react-icons/fa';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const Aboutpage = () => {
+    useEffect(() => {
+        Aos.init({ duration: 3000 });
+    }, []);
+
     return (
         <div className="about">
             <h2>ABOUT ME</h2>
             <div className="infos">
-                <div className="personal">
+                <div className="personal" data-aos="fade-up">
                     <h3>PERSONAL DETAILS</h3>
                     <div className="info-item">
                         <span className="label">Name :</span>
@@ -41,7 +46,7 @@ const Aboutpage = () => {
                         </a>
                     </div>
                 </div>
-                <div className="education">
+                <div className="education" data-aos="fade-up">
                     <h3>EDUCATION</h3>
                     <dl>
                         <dt>Bannari Amman Institute of Technology [2022-2026]</dt>

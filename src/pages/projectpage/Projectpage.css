@@ -19,10 +19,10 @@
 @media(max-width:1150px){
     .project-container{
         flex-direction: column;
-        margin:0px 200px;
+        margin:0px 100px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 .project-container{
     margin: 0px 0px;
 }

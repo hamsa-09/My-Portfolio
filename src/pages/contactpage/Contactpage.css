@@ -24,7 +24,7 @@
 
   .contact-container {
     width: 35%;
-    height: 20rem;
+    height: 21rem;
     background: rgba(222, 218, 218, 0.267);
     padding: 40px;
     border-radius: 10px;
@@ -175,5 +175,6 @@
     .submit-button {
       font-size: 14px;
       padding: 8px 12px;
+
     }
   }

@@ -57,6 +57,7 @@
 @media (max-width: 768px) {
     .skill{
         min-height: 0;
+        margin: 10px 150px;
     }
     .skill-cards {
         display: flex;
@@ -70,7 +71,8 @@
     }
 
     .skill-card {
-        width: auto;
+        min-width: 100px;
+        gap:10px;
         padding: 10px;
         animation: scroll 10s linear infinite;
     }
@@ -93,6 +95,9 @@
 }
 }
 @media (max-width: 480px) {
+    .skill{
+        margin: 0px 40px;
+    }
     .skill h2 {
         font-size: 1.7rem;
     }
