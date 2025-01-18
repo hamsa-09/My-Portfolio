@@ -1,4 +1,5 @@
 .about {
+    min-height: 90vh;
     margin-top: 60px;
     padding: 10px;
     display: flex;

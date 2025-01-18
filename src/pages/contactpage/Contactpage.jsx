@@ -35,8 +35,8 @@ const Contactpage = () => {
         Aos.init({ duration: 3000 });
     }, []);
   return (
-    <div className="contact-page" data-aos="fade-up">
-      <div className="contact-left">
+    <div className="contact-page">
+      <div className="contact-left" data-aos="fade-up">
         <h2>CONTACT ME</h2>
         <p>
           I am available to help you.
@@ -46,7 +46,7 @@ const Contactpage = () => {
           Don't hesitate to send a message my way.
         </p>
       </div>
-      <div className="contact-container">
+      <div className="contact-container" data-aos="fade-up">
         <h2>Get in Touch</h2>
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
