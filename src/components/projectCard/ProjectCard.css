@@ -1,21 +1,21 @@
+/* Project Card Styling */
 .project-card {
     background: rgb(54, 54, 54);
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    flex-basis: 40%;
-    padding:10px 15px;
-    height: 32vh;
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
     gap: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: inset 10px 0px 0px 0px rgb(1, 181, 169);
     position: relative;
     overflow: hidden;
-    transition: background 1s ease;
+    transition: background 0.5s ease-in-out;
+    margin: 0 auto;
 }
-.project-card h3{
-    z-index: 1;
-}
+
+/* Card Hover Effect */
 .project-card::before {
     content: "";
     position: absolute;
@@ -24,87 +24,122 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(to right, rgb(47, 176, 176), rgb(1, 81, 77));
-    transition: left 1s ease, color 1s ease;
+    transition: left 0.5s ease-in-out;
     z-index: 0;
 }
 
 .project-card:hover::before {
     left: 0;
-    color: white;
 }
 
-.project-text img {
-    width: 50%;
-    height: 20vh;
+.project-card h3 {
     position: relative;
+    color: white;
+    font-size: 1.5rem;
     z-index: 1;
+    text-align: center;
 }
 
-.project-text {
+/* Image Slider */
+
+.image-slider {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 35vh;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out;
+}
+/* Navigation Arrows */
+.arrow {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-60%);
+    transition: background 0.3s ease;
+}
+
+.arrow.left {
+    left: 5px;
+}
+
+.arrow.right {
+    right: 5px;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Project Description */
+.project-text {
     color: rgb(218, 218, 218);
-    text-align: left;
-    gap:20px;
-    padding-bottom:30px ;
+    text-align: center;
+    padding-bottom: 15px;
     margin-top: 10px;
     position: relative;
     z-index: 1;
 }
 
+/* Stack Info */
 .project-stack {
     display: none;
     color: rgb(218, 218, 218);
-    align-items:left;
-    text-align: left;
     position: relative;
+    text-align: center;
 }
 
 .project-card:hover .project-stack {
     display: block;
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
+    position: relative;
+    padding-top: 10px;
+}
 
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+    .project-card {
+        max-width: 90%; /* Adjusts width for smaller screens */
+    }
+
+    .image-slider {
+        max-height: 300px; /* Limits height for tablets */
+    }
 }
 
 @media (max-width: 767px) {
     .project-card {
-      flex-basis: 100%;
-      flex-direction: column;
-      align-items: center;
-      padding:5px;
-    }
-    .project-card:hover .project-stack {
-        display: block;
-        position: absolute;
-        right: 20px;
-        bottom: 10px;
+        max-width: 95%;
+        padding: 10px;
     }
 
-    .project-card img {
-      width:auto;
-      height: 8rem;
-      border-radius: 0;
-
+    .image-slider {
+        max-height: 200px;
     }
 
     .project-text {
-     flex-direction: column;
-      font-size: 0.9rem;
-      text-align: left;
-      max-width: 90%;
-      margin-bottom: 25px;
+        font-size: 0.9rem;
     }
-    .project-stack{
+
+    .project-stack {
         font-size: 0.8rem;
     }
-  }
-  @media(max-width:1150px){
-    .project-card{
-        padding:30px 15px;
-    };
-    .project-stack{
-        padding: 20px;
 
+    .arrow {
+        padding: 8px;
+        font-size: 1rem;
     }
 }

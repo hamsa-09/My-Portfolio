@@ -1,20 +1,20 @@
 import React, { useEffect, useRef } from 'react';
 import './Skillspage.css';
 import SkillCard from "../../components/skillCard/SkillCard";
-import img1 from "../../assets/java.png";
+import img1 from "../../assets/jv.png";
+import img2 from "../../assets/c.png";
+import img3 from "../../assets/figma.png";
 
 const Skillspage = () => {
     const skills = [
         { skill: 'Java', image: img1 },
-        { skill: 'C language', image: img1 },
-        { skill: 'HTML', image: img1 },
-        { skill: 'CSS', image: img1 },
-        { skill: 'JavaScript', image: img1 },
-        { skill: 'React Js', image: img1 },
-        { skill: 'Node Js', image: img1 },
-        { skill: 'SpringBoot', image: img1 },
-        { skill: 'MySQL', image: img1 },
-        { skill: 'MongoDB', image: img1 },
+        { skill: 'C language', image: img2 },
+        { skill: 'Figma', image: img3 },
+        { skill: 'React Js', image:"https://images.seeklogo.com/logo-png/27/2/react-logo-png_seeklogo-273845.png" },
+        { skill: 'Express Js', image: "https://logowik.com/content/uploads/images/express-js1720895493.logowik.com.webp" },
+        { skill: 'SpringBoot', image: "https://img.icons8.com/?size=512&id=90519&format=png"},
+        { skill: 'MySQL', image: "https://img.icons8.com/m_rounded/512/FFFFFF/mysql-logo.png"},
+        { skill: 'Github', image: "https://static-00.iconduck.com/assets.00/github-icon-512x512-bgdhvgjm.png"},
     ];
     return (
         <div className="skill">

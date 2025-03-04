@@ -12,9 +12,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0px 150px;
+    margin: 0px 0px;
     gap:40px;
-
 }
 @media(max-width:1150px){
     .project-container{
@@ -29,4 +28,5 @@
 .project h2{
     font-size: 1.7rem;
 }
+
 }
