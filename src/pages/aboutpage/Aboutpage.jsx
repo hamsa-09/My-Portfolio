@@ -5,7 +5,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 const Aboutpage = () => {
     useEffect(() => {
-        Aos.init({ duration: 3000 });
+        Aos.init({ duration: 2000 });
     }, []);
 
     return (

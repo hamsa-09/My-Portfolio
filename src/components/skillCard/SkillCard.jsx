@@ -4,7 +4,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 const SkillCard = ({ skill, image }) => {
     useEffect(() => {
-        Aos.init({ duration: 3000 });
+        Aos.init({ duration: 2000 });
     }, []);
   return (
     <div className="skill-card" data-aos="fade-bottom">

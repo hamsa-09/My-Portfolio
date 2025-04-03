@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Homepage.css";
 import img from "../../assets/dp.png";
-import cv from "../../assets/cv.pdf";
+import cv from "../../assets/Hamsa_Resume.pdf";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -21,7 +21,7 @@ const Homepage = () => {
 
 
   useEffect(() => {
-    Aos.init({ duration: 3000 });
+    Aos.init({ duration: 2000 });
 }, []);
 
   return (
@@ -38,7 +38,7 @@ const Homepage = () => {
           programming skills to create innovative and efficient solutions for
           growth of the organization while leveraging my technical expertise.
         </p>
-        <button onClick={openModal}>View CV</button>
+        <button onClick={openModal}>View Resume</button>
       </div>
 
       {isModalOpen && (
@@ -49,7 +49,7 @@ const Homepage = () => {
             </span>
             <iframe src={cv} title="CV Viewer" className="cv-viewer"></iframe>
             <a href={cv} download="Hamsavardhini_CV.pdf" className="download-button">
-              Download CV
+              Download Resume
             </a>
           </div>
         </div>

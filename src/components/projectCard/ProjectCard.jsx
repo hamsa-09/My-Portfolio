@@ -6,7 +6,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const ProjectCard = ({ project, description,stack, images }) => {
     useEffect(() => {
-        Aos.init({ duration: 3000 });
+        Aos.init({ duration:2000 });
     }, []);
 
     const [currentIndex, setCurrentIndex] = useState(0);
