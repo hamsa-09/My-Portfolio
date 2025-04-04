@@ -54,7 +54,6 @@
 .image-slider img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 8px;
     transition: transform 0.5s ease-in-out;
 }
@@ -131,6 +130,10 @@
     .image-slider {
         max-height: 200px;
     }
+    .image-slider  img{
+        border-radius: 0px;
+    }
+
 
     .project-text {
         font-size: 0.9rem;
