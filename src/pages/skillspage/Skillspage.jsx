@@ -14,7 +14,7 @@ const Skillspage = () => {
         { skill: 'Express Js', image: "https://logowik.com/content/uploads/images/express-js1720895493.logowik.com.webp" },
         { skill: 'SpringBoot', image: "https://img.icons8.com/?size=512&id=90519&format=png"},
         { skill: 'MySQL', image: "https://img.icons8.com/m_rounded/512/FFFFFF/mysql-logo.png"},
-        { skill: 'Github', image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSy2PBuqJ-eP3UVb8Stv03TnfQkRHvKSb2Jw&s"},
+        { skill: 'Github', image: "https://static-00.iconduck.com/assets.00/github-icon-512x512-bgdhvgjm.png"},
     ];
     return (
         <div className="skill">
